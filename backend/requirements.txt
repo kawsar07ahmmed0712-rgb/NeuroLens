@@ -6,3 +6,4 @@ ultralytics
 opencv-python
 pillow
 numpy
+mediapipe

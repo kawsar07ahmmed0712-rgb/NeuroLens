@@ -10,3 +10,8 @@ def b64_to_pil(image_b64: str) -> Image.Image:
   img_bytes = base64.b64decode(image_b64)
   img = Image.open(BytesIO(img_bytes)).convert("RGB")
   return img
+
+
+def bytes_to_pil(img_bytes: bytes):
+  img = Image.open(BytesIO(img_bytes)).convert("RGB")
+  return img
